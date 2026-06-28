@@ -9,9 +9,9 @@
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #ffffff; }
   .hero { position: relative; width: 100%; max-height: 420px; overflow: hidden; }
   .hero img { width: 100%; display: block; object-fit: cover; }
-  .hero-overlay { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.85)); padding: 40px 24px 24px; text-align: center; }
-  .hero-overlay h1 { font-size: clamp(22px, 4vw, 38px); font-weight: 900; letter-spacing: 2px; text-transform: uppercase; }
-  .hero-overlay p { color: #CE0F69; font-size: 14px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px; font-weight: 600; }
+  .hero-overlay { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent 30%, rgba(0,0,0,0.5)); padding: 40px 24px 24px; text-align: center; }
+  .hero-overlay h1 { font-size: clamp(22px, 4vw, 38px); font-weight: 900; letter-spacing: 2px; text-transform: uppercase; text-shadow: 0 2px 8px rgba(0,0,0,0.8); }
+  .hero-overlay p { color: #CE0F69; font-size: 14px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px; font-weight: 600; text-shadow: 0 2px 8px rgba(0,0,0,0.8); }
   .stripe { background: #CE0F69; padding: 10px 24px; text-align: center; font-size: 13px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
   .games { max-width: 960px; margin: 0 auto; padding: 40px 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
   @media (max-width: 640px) { .games { grid-template-columns: 1fr; } }
@@ -36,6 +36,12 @@
   .ticket-price .old { color: #555; font-weight: 400; text-decoration: line-through; font-size: 11px; margin-left: 4px; }
   .tags { display: flex; flex-wrap: wrap; gap: 6px; }
   .tag { background: #1e1e1e; border: 1px solid #333; border-radius: 99px; padding: 4px 10px; font-size: 12px; color: #aaa; }
+  .tag.pink { border-color: #CE0F69; color: #CE0F69; }
+  .ribbon-section { max-width: 960px; margin: 0 auto 40px; padding: 0 20px; }
+  .ribbon-box { background: #141414; border: 1px solid #CE0F69; border-radius: 12px; padding: 20px 24px; display: flex; align-items: flex-start; gap: 16px; }
+  .ribbon-icon { font-size: 32px; flex-shrink: 0; margin-top: 2px; }
+  .ribbon-box h3 { color: #CE0F69; font-size: 15px; margin-bottom: 6px; }
+  .ribbon-box p { font-size: 13px; color: #aaa; line-height: 1.6; }
   footer { border-top: 1px solid #1a1a1a; padding: 24px 20px; text-align: center; }
   footer a { color: #CE0F69; text-decoration: none; font-size: 14px; font-weight: 600; }
   footer p { color: #444; font-size: 12px; margin-top: 8px; }
@@ -96,6 +102,7 @@
       <div class="tags">
         <span class="tag">🎪 Hüpfburg</span>
         <span class="tag">🚗 US-Sportwagen Ausstellung</span>
+        <span class="tag pink">🎗️ Pink Day</span>
       </div>
     </div>
   </div>
@@ -140,10 +147,21 @@
         <span class="tag">🚒 Feuerwehr</span>
         <span class="tag">🏥 Pflegekräfte</span>
         <span class="tag">💙 Danke sagen</span>
+        <span class="tag pink">🎗️ Pink Day</span>
       </div>
     </div>
   </div>
 
+</div>
+
+<div class="ribbon-section">
+  <div class="ribbon-box">
+    <div class="ribbon-icon">🎗️</div>
+    <div>
+      <h3>Gemeinsam gegen Brustkrebs</h3>
+      <p>Die Aachen Vampires tragen in dieser Saison bewusst Pink. In Kooperation mit dem Brustzentrum des Marienhospitals Aachen setzen wir ein Zeichen und sammeln aktiv Spenden für den Kampf gegen Brustkrebs. An beiden Spieltagen könnt ihr Teil dieser Bewegung sein.</p>
+    </div>
+  </div>
 </div>
 
 <footer>
